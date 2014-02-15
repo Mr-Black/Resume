@@ -1,0 +1,113 @@
+
+
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding 
+
+% adjust the page margins
+\usepackage[scale=0.75, bottom=1.5cm, top=1cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % if you want to force the width allocated to your name
+
+% personal info
+\firstname{Michael}
+\familyname{Barnes}
+\address{9769 Caminito Doha}{San diego CA 92131}
+\mobile{+1~(858)~775~9835}
+\email{mbarnes7@vt.edu}
+%\homepage{mr-black.github.io}                    % uncomment when you have updated the website
+
+%content
+\begin{document}
+
+\makecvtitle
+\vspace{-1.5cm}
+
+\section{Education}
+\cventry{}{B.S. Computer Science}{\newline{Graduated Magna Cum Laude from Virginia Tech}}{}{}{}
+
+\section{Experience}
+\cventry{\textbf{SWE\\Intern}}{Corporate Engineering}{Google}{New York}{NY}{
+\begin{itemize}
+\item Wrote build rules for both client and server side code that allowed for individual javascript files to be easily served in development and a single compiled file to be served in production.
+\item Created python appengine service for communicating with backend data source on behalf of UI.
+\item Evaluated UI frameworks and worked with team to choose correct framework to suit our needs.
+\item Designed and implemented part of UI using AngularJS, Angular Bootstrap, and TODC Bootstrap.
+\end{itemize}
+}
+\vspace{.13cm}
+
+\cventry{\textbf{SDET Intern}}{Adexpert Delivery Engine}{Microsoft}{Bellevue}{WA}{%
+\begin{itemize}%
+\item Designed specification for Adexpert DE test one box deployment tool.
+\vspace{.13cm}
+\item Worked with multiple teams in order to design a tool that would best fit a wide variety of deployment needs.
+\vspace{.13cm}
+\item Implemented VM service for DE test one box deployment tool.
+\vspace{.13cm}
+\item Collaborated with another member of the DE test team to design and implement the step execution service for the DE test one box deployment tool.
+\vspace{.13cm}
+\item Designed and Implemented a web UI using jQuery and ASP.net for the DE test one box deployment tool.
+\vspace{.13cm}
+\end{itemize}}
+\cventry{\textbf{Software Dev Co-op}}{Rational Buildforge}{IBM}{Austin}{TX}{
+\begin{itemize}%
+\item Automated metric gathering and charting from Rational Team Concert and Rational Quality Manager for Rational Buildforge and Rational Automation Framework.
+\vspace{.13cm}
+\item Co-Authored Rational Build Forge Agent Update Utility, which deploys and updates Build Forge agents on remote machines.
+\vspace{.13cm}
+\item Wrote a tool which analyzes test results and creates defects in Rational Team Concert from recurring failures.
+\vspace{.13cm}
+\item Resolved defects for the Build Forge product.
+\vspace{.13cm}
+\item Brought Agent update up to the IBM Rational globalization standards.
+\end{itemize}}
+
+\vspace{-0.2cm}
+\section{Computer skills}
+\cvitem{\textbf{Software}}{GNU/Linux, Vim, Git, Subversion, Build Forge, Django, Flask, Hyper-V, KVM.}
+\vspace{.2cm}
+\cvitem{\textbf{Programming Languages}}{Python, C, Javascript, Java}
+
+\section{Open Source Work}
+\cvitem{\textbf{Engagement Tracker}}{Worked in a team to create a mobile application for tracking a users engagement based on readings from an EEG headset. The project page can be found \htmladdnormallink{\textbf{here}}{https://github.com/Mr-Black/engagement-tracker/tree/Develop}}
+\cvitem{\textbf{facts.cat}}{Implemented a web application using Flask and Bootstrap.js geared toward the dissemination of cat knowledge. Users are allowed to add facts and view random facts on the page. The project page can be found \htmladdnormallink{\textbf{here}}{https://github.com/Mr-Black/Cat-Facts}}
+
+
+\section{Extracurricular Activities}
+\cvitem{\textbf{Undergrad Research}}{I worked with professor Cal Ribbens and Dr. Bharath Ramesh on the Samhita distributed memory system.}
+\cvitem{\textbf{Undergrad Teaching Assistant}}{I was an undergraduate teaching assistant for the computer science department. I assisted in teaching and administering comparitive languages, a course about programming language design.}
+\cvitem{\textbf{Member of VTLUUG}}{My interest in open-source software spurred me to join the Virginia Tech Linux and Unix user group my sophomore year of college. I am very interested in GNU/Linux and enjoy learning about open-source software.}
+\cvitem{\textbf{Officer for VTPK}}{I joined the Virginia Tech Parkour club my freshman year of college and was made an officer my sophomore year. My duties varied from organizing events to running the website.}
+\cvitem{\textbf{Member of VTCSec}}{I was a member of the Virginia Tech Cyber Security Club starting junior year.}
+
+%\cvlistitem{}
+\section{Awards and Honors} {
+\cvitem{\textbf{Deans List}}{Fall 2009, Spring 2010, Fall 2011, Spring 2012, Fall 2012, Spring 2013}
+\cvitem{\textbf{VTCSec Summit}}{1st place team (2013), 3rd place team (2012)}
+\cvitem{\textbf{BAH Cyber Triathalon}}{1st place team (2013)}
+}
+\section{Interests}
+\cvitem{\textbf{Music}}{I have been playing the trumpet for eleven years and enjoy all types of music. I recently began learning the piano.}
+\cvitem{\textbf{Arduino}}{My friends and I have spent a lot of time with ardupilot/arduocopter. We recently made a quadcopter based on arducopter.}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+\end{document}
